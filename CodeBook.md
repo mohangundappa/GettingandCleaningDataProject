@@ -142,7 +142,7 @@ names(extractedData)<-gsub("gravity", "Gravity", names(extractedData))
 names(extractedData)
 ```
 
-#### Tidy data set with the average of each variable for each activity and each subject
+#### Create Tidy data set with the average of each variable for activity and subject
 
 `aggregate`, `mean`  and `order` are used to create tidy data set with average of each variable for each activity and each subject.
 
@@ -152,7 +152,7 @@ tidyData <- tidyData[order(tidyData$Subject,tidyData$Activity),]
 
 ```
 
-#### Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+#### Write data set to Tidy.txt file
 `write.table` is used to write tidy data set to "Tidy.txt" file under your workspace.
 
 ```
