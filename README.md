@@ -1,4 +1,4 @@
-# Getting andCleaningDataProject
+# Getting and Cleaning Data Project
 Data Science Course - Getting and Cleaning Data
 
 ##You should create one R script called run_analysis.R that does the following. 
