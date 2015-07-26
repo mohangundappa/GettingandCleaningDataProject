@@ -93,17 +93,20 @@ features <- rbind(featuresTrain, featuresTest)
 colnames(activity) <- "Activity"
 colnames(subject) <- "Subject"
 ```
-`cbind` is used to combine features, activity and subject data set.
+`cbind` is used to combine features, activity and subject data set.<br>
 A complete data set.
 
 `completeData <- cbind(features,activity,subject)`
 
-#### Extracts only the measurements on the mean and standard deviation
+#### Extracts measurements only on mean and standard deviation
 
-`grep` is used to identify the mean and standard deviation columns.
+`grep` is used to identify the mean and standard deviation columns.<br>
+Extract identified (required) columns and create extractedData data set.
+```
 columnsWithMeanSTD <- grep(".*Mean.*|.*Std.*", names(completeData), ignore.case=TRUE)
 requiredColumns <- c(columnsWithMeanSTD, 562, 563)
 extractedData <- completeData[,requiredColumns]
+```
 
 #### Descriptive activity names to name the activities in the data set
 
