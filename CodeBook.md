@@ -51,7 +51,17 @@ Download data set from the below url and unzip under your workspace.
 Data set is available in the directory named `UCI HAR Dataset/` .
 
 #### Read data set (Test, Train, Features and Activity labels)
-`read.table` is used to load the data to R environment for the data, the activities and the subject of both test and training datasets.
+`read.table` is used to load the data into R environment.
+ 
+Following are the data sets
+ a) Feature Names - Columns for test and train data.
+ b) Activity Labels - Descriptive names for activity codes.
+ c) Subject Train - Training subject
+ d) Activity Train - Training Activity data
+ e) Features Train - Training Features data
+ f) Subject Test - Test subject
+ g) Activity Test - Test Activity data
+ h) Features Test - Test Features data
 
 ```
 featureNames <- read.table("UCI HAR Dataset/features.txt")
