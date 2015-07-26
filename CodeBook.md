@@ -108,7 +108,7 @@ requiredColumns <- c(columnsWithMeanSTD, 562, 563)
 extractedData <- completeData[,requiredColumns]
 ```
 
-#### Descriptive activity names to name the activities in the data set
+#### Replace activities (activity code) with descriptive activity names
 
 Iterate for each activity Labels and replace activity label code with description.
 
@@ -121,8 +121,8 @@ for (i in 1:6){
 
 #### Appropriately labels the data set with descriptive variable names.
 
-Labels specified in `features.txt` is added as column names for training and test data. 
-The `Activity` and `Subject` columns are also named properly before merging them to the test and train dataset.
+Labels specified in `features.txt` is added as column names for training and test data.<br> 
+The `Activity` and `Subject` columns are also named properly before merging them to the test and train dataset.<br>
 `gsub` is used to rename column with descriptive variable names. 
 
 ```
